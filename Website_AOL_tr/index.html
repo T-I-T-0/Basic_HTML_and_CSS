@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Space Station | Resort</title>
-    <link rel="stylesheet" href="./css/shared.css">
     <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/shared.css">
+
     <link rel="stylesheet" href="./css/Lightbox.css">
 
 </head>
@@ -38,7 +39,7 @@
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="images/thumb/thumb_1.png" alt="">
+                        <img src="./image/thumb/thumb_1.png" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
                             <p>We have several space launches departing daily, book flight today!</p>
@@ -48,7 +49,7 @@
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="images/thumb/thumb_2.png" alt="">
+                        <img src="image/thumb/thumb_2.png" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
                             <p>We have several space launches departing daily, book flight today!</p>
@@ -58,7 +59,7 @@
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="images/thumb/thumb_3.png" alt="">
+                        <img src="image/thumb/thumb_3.png" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
                             <p>We have several space launches departing daily, book flight today!</p>
@@ -68,7 +69,7 @@
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="images/thumb/thumb_4.png" alt="">
+                        <img src="image/thumb/thumb_4.png" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
                             <p>We have several space launches departing daily, book flight today!</p>
@@ -78,7 +79,7 @@
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="images/thumb/thumb_5.png" alt="">
+                        <img src="image/thumb/thumb_5.png" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
                             <p>We have several space launches departing daily, book flight today!</p>
@@ -88,7 +89,7 @@
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="images/thumb/thumb_6.png" alt="">
+                        <img src="image/thumb/thumb_6.png" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
                             <p>We have several space launches departing daily, book flight today!</p>
@@ -98,7 +99,7 @@
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="images/thumb/thumb_7.png" alt="">
+                        <img src="image/thumb/thumb_7.png" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
                             <p>We have several space launches departing daily, book flight today!</p>
@@ -108,7 +109,7 @@
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="images/thumb/thumb_8.png" alt="">
+                        <img src="image/thumb/thumb_8.png" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
                             <p>We have several space launches departing daily, book flight today!</p>
@@ -118,7 +119,7 @@
 
                 <div class="photo-container">
                     <div class="photo">
-                        <img src="images/thumb/thumb_9.png" alt="">
+                        <img src="image/thumb/thumb_9.png" alt="">
                         <div class="photo-overlay">
                             <h3>Click to Enlarge</h3>
                             <p>We have several space launches departing daily, book flight today!</p>
@@ -133,19 +134,24 @@
         </div>
     </section>
 
+    <!-- Starting the lightbox -->
+    <h2 style="text-align:center">Lightbox</h2>
+
     <!-- Images used to open the lightbox -->
+    <!-- Added style="width:100%" to img tag & 
+     it made the images smaller to fit the screen-->
     <div class="row">
         <div class="column">
-            <img src="./images/thumb/thumb_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            <img src="./image/thumb/thumb_1.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
         </div>
         <div class="column">
-            <img src="./images/thumb/thumb_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            <img src="./image/thumb/thumb_2.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
         </div>
         <div class="column">
-            <img src="./images/thumb/thumb_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            <img src="./image/thumb/thumb_3.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
         </div>
         <div class="column">
-            <img src="./images/thumb/thumb_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            <img src="./image/thumb/thumb_4.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
         </div>
     </div>
     
@@ -154,51 +160,52 @@
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
     
-        <div class="mySlides">
-            <div class="numbertext">1 / 4</div>
-            <img src="./images/thumb/thumb_1_wide.png" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-            <div class="numbertext">2 / 4</div>
-            <img src="./images/thumb/thumb_2_wide.png" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-            <div class="numbertext">3 / 4</div>
-            <img src="./images/thumb/thumb_3_wide.png" style="width:100%">
-        </div>
-    
-        <div class="mySlides">
-            <div class="numbertext">4 / 4</div>
-            <img src="./images/thumb/thumb_4_wide.png" style="width:100%">
-        </div>
-    
-        <!-- Next/previous controls -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    
-        <!-- Caption text -->
-        <div class="caption-container">
-            <p id="caption"></p>
-        </div>
-    
-        <!-- Thumbnail image controls -->
-        <div class="column">
-            <img class="demo" src="./images/thumb/thumb_1.png" onclick="currentSlide(1)" alt="Nature">
-        </div>
-    
-        <div class="column">
-            <img class="demo" src="./images/thumb/thumb_2.png" onclick="currentSlide(2)" alt="Snow">
-        </div>
-    
-        <div class="column">
-            <img class="demo" src="./images/thumb/thumb_3.png" onclick="currentSlide(3)" alt="Mountains">
-        </div>
-    
-        <div class="column">
-            <img class="demo" src="./images/thumb/thumb_4.png" onclick="currentSlide(4)" alt="Lights">
-        </div>
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="./image/thumb/thumb_1_wide.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="./image/thumb/thumb_2_wide.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="./image/thumb/thumb_3_wide.png" style="width:100%">
+            </div>
+        
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="./image/thumb/thumb_4_wide.png" style="width:100%">
+            </div>
+        
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        
+            <!-- Thumbnail image controls -->
+             <!-- Added style="width:100%" -->
+            <div class="column">
+                <img class="demo cursor" src="./image/thumb/thumb_1.png" style="width:100%" onclick="currentSlide(1)" alt="Nature">
+            </div>
+        
+            <div class="column">
+                <img class="demo cursor" src="./image/thumb/thumb_2.png" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+            </div>
+        
+            <div class="column">
+                <img class="demo cursor" src="./image/thumb/thumb_3.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+        
+            <div class="column">
+                <img class="demo cursor" src="./image/thumb/thumb_4.png" style="width:100%" onclick="currentSlide(4)" alt="Lights">
+            </div>
         </div>
     </div>
 
@@ -237,7 +244,7 @@
     <div id="footer">
         www.thespacestation.com &nbsp;|&nbsp; &copy; 2016
     </div>
-    <script src="./JS/main.js"></script>
+    <script src="./JS/main1.js"></script>
     
 </body>
 </html>
